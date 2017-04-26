@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AJAX Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='formid'>
+            
+        <form id='myForm'>
+            <div class="dialog">
+                <p class="close-thik" onclick='closem()'></p>
+            </div>
+            Name   : <input type="text" placeholder="Enter your name" id='name'/>
+            <br />
+            Email  :<input type="text" id="email"/>
+            <br />
+            Phone  :<input type="text" id="phone"/>
+            <br />
+            Address:<input type="text" id="address"/>
+            <br />
+            State  :<input type="text" id="state"/>
+            <br />
+            Country:<input type="text" id="country"/>
+            <br />
+            <input type="button" value="submit" id='btn'/>
+            <input type="button" value="update" id='update'/>
+            <input type="button" value="reset" id='btn2'/>
+            <input type="button" value="cancel" id='cancel' onclick="closem()"/>
+        </form>
+        </div>
+        <input type="button" value="ADD" id='add' onclick="popup()"/>
+        <input placeholder="search" id='search-criteria'/>
+        <table id='myTable'>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th colspan="3">options</th>
+            </tr>
+        </table>
+        <br />
+        <script src="script.js"></script>
+    </body>
+</html>
